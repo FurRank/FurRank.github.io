@@ -1,0 +1,15 @@
+.hover_image {
+	position: relative;
+}
+
+.hover_image a span{
+	/*display:none; !!!*/
+
+	position: absolute;
+	display: none;
+	z-index: 99;
+}
+
+.hover_image a:hover span{
+	display:block;
+}
