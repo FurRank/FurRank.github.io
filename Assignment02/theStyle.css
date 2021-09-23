@@ -1,0 +1,41 @@
+.column{
+	float:left;
+	width: 30%;
+	padding: 20px;
+}
+
+.bottom_display::after{
+	content="";
+	clear:both;
+	display:table;
+}
+
+.test_font{
+	font-family: fantasy;
+	font-size: 100px;
+	padding:20px;
+}
+.test_font:hover{
+	background-color: #808080
+}
+
+
+.left{
+	float:left;
+	width:20%;
+	padding:5px;
+}
+
+.right{
+	float:right;
+	width:20%;
+	padding:5px;	
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*padding:5px;*/
+}
