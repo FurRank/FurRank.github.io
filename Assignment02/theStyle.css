@@ -16,9 +16,24 @@
 	padding:20px;
 }
 .test_font:hover{
-	background-color: #808080
+	/*background-color: #808080*/
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
+.main_font{
+	text-align:center; 
+	font-size:70px; 
+	font-family:Monaco; 
+	color:#3366FF;
+}
+
+.main_font:hover{
+	background-image: linear-gradient(to right, red, yellow, blue, green);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+}
 
 .left{
 	float:left;
