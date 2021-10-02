@@ -1,0 +1,173 @@
+body{
+	background-color: #FF1694;
+}
+
+main{
+	background-color: white;
+}
+
+#theFace{
+	width:90px;
+	height:90px;
+	background-color: pink;
+	margin-right:auto;
+	margin-left:auto;
+
+	margin-top: 6px;
+	padding:5px;
+
+}
+
+.theEyes{	
+	display:flex;
+	width: 10px;
+	height: 10px;
+	background: #FC46AA;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	position: absolute;
+
+	left:-45px;
+	right:0px;
+	top:90px;
+	bottom:0px;
+
+}
+
+.theEyes + p{
+	width: 10px;
+	height: 10px;
+	background: #FC46AA;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:45px;
+	right:0px;
+	top:74px;
+	bottom:0px;
+}
+
+#theNose{
+	display:flex;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+
+	/*Getting shapes https://css-tricks.com/the-shapes-of-css/ */
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 25px solid red;
+
+
+	left:0px;
+	right:0px;
+	top:105px;
+	bottom:0px;
+}
+
+#leftHair{
+	width: 30px;
+	height: 100px;
+	background-color: #3D2814;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:0px;
+	right:120px;
+	top:80px;
+	bottom:0px;
+}
+
+#theHair{
+	width: 150px;
+	height: 20px;
+	background-color: #3D2814;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:0px;
+	right:0px;
+	top:60px;
+	bottom:0px;
+}
+
+#rightHair{
+	width: 30px;
+	height: 100px;
+	background-color: #3D2814;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:120px;
+	right:0px;
+	top:80px;
+	bottom:0px;
+}
+
+
+#theBody{
+	display:flex;
+	justify-content: center;
+}
+
+#theBottom{
+	width: 170px;
+	height: 100px;
+	background-color: #03A9F4;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#leftBottom{
+	width: 70px;
+	height: 200px;
+	background-color: #03A9F4;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:0px;
+	right:115px;
+	top:500px;
+	bottom:0px;
+
+	transform: rotate(5deg);
+}
+
+#rightBottom{
+	width: 70px;
+	height: 200px;
+	background-color: #03A9F4;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	position: absolute;
+
+	left:115px;
+	right:0px;
+	top:500px;
+	bottom:0px;
+
+	transform: rotate(-5deg);
+}
