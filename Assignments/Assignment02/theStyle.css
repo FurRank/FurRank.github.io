@@ -1,3 +1,7 @@
+body{
+	background-color:#D8F3FA;
+}
+
 .column{
 	float:left;
 	width: 30%;
@@ -16,7 +20,7 @@
 	padding:20px;
 }
 .test_font:hover{
-	/*background-color: #808080*/
+	/*background-color: #808080;*/
 	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
