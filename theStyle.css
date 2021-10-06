@@ -1,47 +1,17 @@
-/* {
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
-	 background-color: rgba(0,0,0, .9); 
-	font-family: Avenir, sans-serif;
-	height: 10vh;
-	background-color: rgba(0,0,0, .9);
-
-}
-
-.navbar{
-	background-color: black;
-	overflow: hidden;
-}
-
-.navbar a span{
-	color: green;
-	/*text-align: center;
-	padding: 2vw;
-	text-decoration: none;
-}
-
-li a:hover{
-	color:red;
-}
-*/
-
-/*---------------------------------------------------------------------*/
-
 /*For Gradient Colors*/
 /*https://www.eggradients.com/gradient-color*/
 
-/*#background{
-	width:100vw;
-	min-height:100vh;
-	background-color: #ffcfdf; 
-	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
-}*/
+/*Issue with scrolling to right side, shows blue block*/
 
-/*html{
+body{
+	width:auto; 
+	height:auto;
+
 	background-color: #ffcfdf; 
-	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
-}*/
+	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%); 
+
+	position:relative;
+}
 
 nav{
 	position: fixed;
@@ -77,39 +47,27 @@ a {
 	text-decoration: none;
 } 
 
-p {
-	/*position:relative;*/
-	/*padding:10px;*/
-	/*margin:0px;*/
-}
-
 .shiftR{
 	position:relative;
 	font-family:Monospace; 
 	font-size:100px;
-	left:250px;
+	left:200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .imgsource{
-	/*background:brown;*/
-	/*display:flex;*/
-	/*display:inline-block;*/
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
-	display: block;
 	left:200px;
 	top:825px;
 }
 
 .imgsourceTwo{
-	/*background:brown;*/
-	/*display:flex;*/
-	/*display:inline-block;*/
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
-	display: block;
 	left:800px;
 	top:800px;
 }
