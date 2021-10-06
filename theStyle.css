@@ -3,15 +3,18 @@
 
 /*Issue with scrolling to right side, shows blue block*/
 
-body{
+html, body{
 	width:auto; 
 	height:auto;
 
-	background-color: #ffcfdf; 
-	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%); 
+	background-color: #f9c1b1;
+	background-image: linear-gradient(315deg, #f9c1b1 0%, #fb8085 74%);
+	padding:0px;
+    overflow-x:hidden;
 
 	position:relative;
 }
+
 
 nav{
 	position: fixed;
