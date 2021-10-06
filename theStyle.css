@@ -3,7 +3,10 @@
 
 /*Issue with scrolling to right side, shows blue block*/
 
-html, body{
+/*Hiding the overflow of the empty space*/
+/*https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/5805134*/
+
+body{
 	width:auto; 
 	height:auto;
 
