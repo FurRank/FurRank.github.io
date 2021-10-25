@@ -15,6 +15,9 @@ body{
 	padding:0px;
     overflow-x:hidden;
 
+/*    background-image: url("https://i.gifer.com/origin/6b/6b0f19174a89fbe967cbdec6a285344a_w200.gif");
+ 	background-color: #cccccc;*/
+
 	position:relative;
 }
 
@@ -77,3 +80,16 @@ a {
 	left:800px;
 	top:800px;
 }
+
+/*.positioned{
+	position:fixed;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	margin: auto;
+  	min-width: 100%;
+  	min-height: 100%;
+}*/
+/*For NetArt experience*/
+/*https://www.w3schools.com/css/css3_backgrounds.asp
