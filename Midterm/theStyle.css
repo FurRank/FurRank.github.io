@@ -33,9 +33,16 @@ main{
 
 .map_image{
 	width:100%;
-	max-width: 350px
+	max-width: 650px
 	height:100%;
-	max-height: 350px;
+	max-height: 650px;
+}
+
+.true_map{
+	width:110%;
+	max-width: 550px
+	height:100%;
+	max-height: 700px;	
 }
 
 /*Third column not responding correctly*/
