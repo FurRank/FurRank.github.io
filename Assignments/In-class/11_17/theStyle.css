@@ -1,0 +1,36 @@
+body {
+	background-color: hsl(160, 82%, 89%);
+	/*display:grid;*/
+}
+
+p {
+  text-align: center;
+  font-size:12px;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	/*padding: 10vw;*/
+	/*margin: 2vh;*/
+	border: solid 3px black;
+	border-radius: 10px;
+	/*margin: auto;*/
+}
+
+
+button:hover {
+	 background-color: pink;
+}
+
+h1{
+	visibility: hidden;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	padding:100px;
+}
+
