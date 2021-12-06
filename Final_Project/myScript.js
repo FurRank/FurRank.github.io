@@ -1,3 +1,7 @@
+// back button bottom right
+// song plays w/ preview
+
+
 var counter = 1;
 // const getAudio = document.getElementById("audio")
 // const getAudio2 = document.getElementById("audio")
@@ -28,7 +32,7 @@ const getAlbum8 = document.getElementById("album8");
 const getAlbum9 = document.getElementById("album9");
 const getAlbum10 = document.getElementById("album10");
 
-audio[10].volume = 0.5;
+audio[10].volume = 0.2;
 
 // audio[10].play();
 $('.button-panel').on('click', function(){
