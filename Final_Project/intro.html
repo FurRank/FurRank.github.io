@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Final Project Intro</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<link href="theStyle.css" rel="stylesheet" type="text/css">
+		<script src="myScript.js" defer></script>
+	</head>
+
+	<body>
+		<div class = "container">
+			<div class = "center">
+				<h1>Welcome to my personal music library! Here are 10 of my personal favorite (in no particular order) songs.</h1> <p>The options available are "Previous" and "Next", self explanatory. "Preview", which allows you to preview the song you are currently looking at, and "Pause", which pauses the current song you are previewing. Lastly, click on the album to hear the full song and see my personal reasonings of choosing said song.<p>
+			</div>
+		</div>
+
+
+		<div class = "container">
+			<div class = "bottom">
+			</div>
+		</div>
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Final Project</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<link href="theStyle.css" rel="stylesheet" type="text/css">
+		<script src="myScript.js" defer></script>
+	</head>
+
+	<body>
+		<div class = "container">
+			<div class = "center">
+				<div id = "album1">
+					<p>Fairy Tale - Seori</p>
+					<a href = "albums/album1.html"><img src = "Images/FairyTale_Seori.png" class = "album" slide-panelid = "ost1"/></a>
+				</div>
+		<!-- <img src = "Images/rectangle2.png" class = "oy" slide-panelid = "ost2" style = "left:25%; top:5%"/> -->
+		<!-- <img src = "Images/rectangle2.png" class = "album" slide-panelid = "ost2"/> -->	
+				<div id = "album2">
+					<p>The Night - Lovewave</p>
+					<a href = "albums/album2.html">
+						<img src = "Images/The_Night_Lovewave.png" class = "album" slide-panelid = "ost2"/></a>
+				</div>
+
+				<div id = "album3">
+					<p>Nights - Frank Oceans</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album3.html">
+						<img src = "Images/Nights_FrankOcean.png" class = "album" slide-panelid = "ost3"/></a>
+				</div>
+
+				<div id = "album4">
+					<p>Every Summertime - NIKI</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album4.html">
+						<img src = "Images/Every_Summertime_NIKI.png" class = "album" slide-panelid = "ost4"/></a>
+				</div>
+
+				<div id = "album5">
+					<p>ONLY - LeeHi</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album5.html">
+						<img src = "Images/ONLY_LeeHi.png" class = "album" slide-panelid = "ost5"/></a>
+				</div>
+
+				<div id = "album6">
+					<p>Raincoat (feat. Chloe Ho) - Kieron Lee</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album6.html">
+						<img src = "Images/Raincoat_KieranLee.png" class = "album" slide-panelid = "ost6"/></a>
+				</div>
+
+				<div id = "album7">
+					<p>Feel Free - FreeTEMPO</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album7.html">
+						<img src = "Images/Feel_Free_FreeTEMPO.png" class = "album" slide-panelid = "ost7"/></a>
+				</div>
+
+				<div id = "album8">
+					<p>Never Never Gonna Give Ya Up - BarryWhite</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album8.html">
+						<img src = "Images/Never_Never_Gonna_Give_Ya_Up_BarryWhite.png" class = "album" slide-panelid = "ost8"/></a>
+				</div>
+
+				<div id = "album9">
+					<p>Andromeda (feat. DRAM)</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album9.html">
+						<img src = "Images/Andromeda_Gorillaz.png" class = "album" slide-panelid = "ost9"/></a>
+				</div>
+
+				<div id = "album10">
+					<p>Fragile - Tatsuro Yamashita</p>
+					<!-- <a href = "albums/album3.html"> -->
+					<a href = "albums/album10.html">
+						<img src = "Images/Fragile_Tatsuro_Yamashita.png" class = "album" slide-panelid = "ost9"/></a>
+				</div>
+
+				<div id = "img1">
+					<img src = "Images/Wireframe1.png" class = "album" slide-panelid = "wf1"/>
+				</div>
+
+
+				<div id = "img2">
+					<img src = "Images/Wireframe2.png" class = "album" slide-panelid = "wf2"/>
+				</div>
+
+		<!-- <img src = "Images/rectangle1.png" class = "oy" slide-panelid = "ost3" style = "left:25%; top:15%"/> -->
+
+			</div>
+		</div>
+
+
+		<div class = "container">
+			<div class = "bottom">
+				<button class = "button-panel" data-panelid = "on-click1">Previous</button>
+				<button class = "button-panel" data-panelid = "on-click2">Preview</button>
+				<!-- <input type = "button-panel" value = "Preview" data-panelid = "on-click2" onclick = "play()"> -->
+				<audio id = "audio" audio-panelid = "audio1" src = "CutSongs/Fairy_Tale_Seori_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio2" src = "CutSongs/The_Night_Lovewave_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio3" src = "CutSongs/Nights_FrankOcean_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio4" src = "CutSongs/Every_Summertime_NIKI_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio5" src = "CutSongs/ONLY_LeeHi_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio6" src = "CutSongs/Raincoat_KieronLee_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio7" src = "CutSongs/Feel_Free_FreeTEMPO_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio8" src = "CutSongs/Never_Never_Gonna_Give_Ya_Up_BarryWhite_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio9" src = "CutSongs/Andromeda_Gorillaz_cut.mp3"></audio>
+				<audio id = "audio" audio-panelid = "audio10" src = "CutSongs/Fragile_TatsuroYamashita_cut.mp3"></audio>
+				<audio autoplay loop id = "audio" audio-panelid = "audio11" src = "Songs/Menu.mp3"></audio>
+
+				<button class = "button-panel" data-panelid = "on-click3">Pause</button>
+				<button class = "button-panel" data-panelid = "on-click4">Next</button>
+			</div>
+		</div>
+	</body>
+</html>
+

@@ -1,5 +1,88 @@
 let counter = 1;
 
+$(function(){
+    $.fn.displayAlbum1 = function(){
+        $('#album1').css({
+            display:"initial"
+        });
+        $('#album2').css({
+            display:"none"
+        });
+        $('#album3').css({
+            display:"none"
+        })
+        $('#album4').css({
+            display:"none"
+        })
+        $('#img1').css({
+            display:"none"
+        });
+        $('#img2').css({
+            display:"none"
+        });  
+    }
+    $.fn.displayAlbum2 = function(){
+        $('#album1').css({
+            display:"none"
+        });
+        $('#album2').css({
+            display:"initial"
+        });
+        $('#album3').css({
+            display:"none"
+        })
+        $('#album4').css({
+            display:"none"
+        })
+        $('#img1').css({
+            display:"none"
+        });
+        $('#img2').css({
+            display:"none"
+        });
+    }
+    $.fn.displayAlbum3 = function(){
+        $('#album1').css({
+            display:"none"
+        });
+        $('#album2').css({
+            display:"none"
+        });
+        $('#album3').css({
+            display:"initial"
+        })
+        $('#album4').css({
+            display:"none"
+        })
+        $('#img1').css({
+            display:"none"
+        });
+        $('#img2').css({
+            display:"none"
+        });
+    }
+    $.fn.displayAlbum4 = function(){
+        $('#album1').css({
+            display:"none"
+        });
+        $('#album2').css({
+            display:"none"
+        });
+        $('#album3').css({
+            display:"none"
+        })
+        $('#album4').css({
+            display:"initial"
+        })
+        $('#img1').css({
+            display:"none"
+        });
+        $('#img2').css({
+            display:"none"
+        });
+    }
+})
+
 $('.button-panel').on('click', function(){
     var buttonId = $(this).attr('data-panelid')
     if(buttonId == "on-click1"){ // Previous
@@ -8,65 +91,68 @@ $('.button-panel').on('click', function(){
             counter--;
         }
         if(counter == 1){
-            $('#album1').css({
-                display:"initial"
-            });
-            $('#album2').css({
-                display:"none"
-            });
-            $('#album3').css({
-                display:"none"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });            
+            $.fn.displayAlbum1();
+            // $('#album1').css({
+            //     display:"initial"
+            // });
+            // $('#album2').css({
+            //     display:"none"
+            // });
+            // $('#album3').css({
+            //     display:"none"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });            
             console.log(counter)
         }else if(counter == 2){
-            $('#album1').css({
-                display:"none"
-            });
-            $('#album2').css({
-                display:"initial"
-            });
-            $('#album3').css({
-                display:"none"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });
+            $.fn.displayAlbum2();
+            // $('#album1').css({
+            //     display:"none"
+            // });
+            // $('#album2').css({
+            //     display:"initial"
+            // });
+            // $('#album3').css({
+            //     display:"none"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });
             // counter--;
             console.log(counter)
         }else if(counter == 3){
-            $('#album1').css({
-                display:"none"
-            });
-            $('#album2').css({
-                display:"none"
-            });
-            $('#album3').css({
-                display:"initial"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });
+            $.fn.displayAlbum3();
+            // $('#album1').css({
+            //     display:"none"
+            // });
+            // $('#album2').css({
+            //     display:"none"
+            // });
+            // $('#album3').css({
+            //     display:"initial"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });
             // counter--;
             console.log(counter)
         }else if(counter == 4){
@@ -153,87 +239,91 @@ $('.button-panel').on('click', function(){
             counter++;
         }
         if(counter == 1){
-            $('#album1').css({
-                display:"initial"
-            });
-            $('#album2').css({
-                display:"none"
-            });
-            $('#album3').css({
-                display:"none"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });     
+            $.fn.displayAlbum1();
+            // $('#album1').css({
+            //     display:"initial"
+            // });
+            // $('#album2').css({
+            //     display:"none"
+            // });
+            // $('#album3').css({
+            //     display:"none"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });     
             // counter++      
             console.log(counter)
         }else if(counter == 2){
-            $('#album1').css({
-                display:"none"
-            });
-            $('#album2').css({
-                display:"initial"
-            });
-            $('#album3').css({
-                display:"none"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });     
+            $.fn.displayAlbum2();
+            // $('#album1').css({
+            //     display:"none"
+            // });
+            // $('#album2').css({
+            //     display:"initial"
+            // });
+            // $('#album3').css({
+            //     display:"none"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });     
             // counter++      
             console.log(counter)
         }else if(counter == 3){
-            $('#album1').css({
-                display:"none"
-            });
-            $('#album2').css({
-                display:"none"
-            });
-            $('#album3').css({
-                display:"initial"
-            })
-            $('#album4').css({
-                display:"none"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });
+            $.fn.displayAlbum3();
+            // $('#album1').css({
+            //     display:"none"
+            // });
+            // $('#album2').css({
+            //     display:"none"
+            // });
+            // $('#album3').css({
+            //     display:"initial"
+            // })
+            // $('#album4').css({
+            //     display:"none"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });
             // counter++
             console.log(counter)
         }else if(counter == 4){
-            $('#album1').css({
-                display:"none"
-            });
-            $('#album2').css({
-                display:"none"
-            });
-            $('#album3').css({
-                display:"none"
-            })
-            $('#album4').css({
-                display:"initial"
-            })
-            $('#img1').css({
-                display:"none"
-            });
-            $('#img2').css({
-                display:"none"
-            });
+            $.fn.displayAlbum4();
+            // $('#album1').css({
+            //     display:"none"
+            // });
+            // $('#album2').css({
+            //     display:"none"
+            // });
+            // $('#album3').css({
+            //     display:"none"
+            // })
+            // $('#album4').css({
+            //     display:"initial"
+            // })
+            // $('#img1').css({
+            //     display:"none"
+            // });
+            // $('#img2').css({
+            //     display:"none"
+            // });
             console.log(counter)
         }
         // $('#album1').css({
