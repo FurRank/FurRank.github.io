@@ -45,7 +45,7 @@ html{
 	text-decoration: none;
 }
 
-#posbutton{
+.posbutton{
 	position:fixed;
 	text-decoration: none;
 	/*bottom:100px;
