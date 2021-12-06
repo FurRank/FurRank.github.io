@@ -32,14 +32,14 @@ const getAlbum8 = document.getElementById("album8");
 const getAlbum9 = document.getElementById("album9");
 const getAlbum10 = document.getElementById("album10");
 
-audio[10].volume = 0.2;
+audio[10].volume = 0.05;
 
 // audio[10].play();
 $('.button-panel').on('click', function(){
     var buttonId = $(this).attr('data-panelid')
     if(buttonId == "on-click1"){ // Previous
         audio[counter-1].pause();
-        audio[10].volume = 0.3;
+        audio[10].volume = 0.05;
         audio[10].play();
         if(counter != 1){
             counter--;
@@ -82,12 +82,12 @@ $('.button-panel').on('click', function(){
         // }
     }else if(buttonId == 'on-click3'){ //Pause
         audio[counter-1].pause();
-        audio[10].volume = 0.3;
+        audio[10].volume = 0.05;
         audio[10].play();
 
     }else if(buttonId == 'on-click4'){ // Next
         audio[counter-1].pause();
-        audio[10].volume = 0.3;
+        audio[10].volume = 0.05;
         audio[10].play();
         if(counter != 10){
             counter++;
