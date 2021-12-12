@@ -9,6 +9,7 @@
 	text-align: center;
 	vertical-align: center;
 	/*font-family: 'IM Fell English SC', serif;*/
+	/*font-family: sans-serif;*/
 	margin: auto;
 	/*font-size: 30px;*/
 	padding:20px, 0;
@@ -28,26 +29,46 @@ html{
 	height: 100%;
 }
 
-.buttonOn{
+#buttonOn{
 /*	left:0;
 	bottom:0;
 	width:100%;
 	color:black;
 	text-align: left;*/
 	/*background-color: orange;*/
+/*	position: relative;
 	border-radius: 5px;
 	border-color: #46b8da;
 	font-size: 18px;
 	text-align: center;
 	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	text-decoration: none;
+	margin-left: auto;*/
+	/*position: absolute;*/
+	/*right:    0;*/
+	/*bottom:   0;*/
+	/*display: flex;*/
+	/*text-decoration: none;*/
+	/*background-color : #31B0D5;*/
+	/*color: white;*/
+	/*padding: 10px 20px;*/
+	/*border-radius: 4px;*/
+	/*border-color: #46b8da;*/
+    position: absolute;
+    bottom: 10px;
+    /*left: 50%;*/
+    /*margin-left: -104.5px; 104.5px is half of the button's width*/
+
 }
 
 .posbutton{
-	position:fixed;
-	text-decoration: none;
-	/*bottom:100px;
-	left:10px;*/
+/*    float: right;
+    width: 83%;
+    margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height:625px;
+    overflow:auto*/;
+ 	position: fixed;
+ 	bottom: -4px;
+ 	left: 10px;
 }

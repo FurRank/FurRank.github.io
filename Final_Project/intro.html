@@ -33,6 +33,7 @@
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://kit.fontawesome.com/d55ec6a3e5.js" crossorigin="anonymous"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 		<link href="theStyle.css" rel="stylesheet" type="text/css">
 		<script src="myScript.js" defer></script>
@@ -127,7 +128,9 @@
 		<div class = "container">
 			<div class = "bottom">
 				<button class = "button-panel" data-panelid = "on-click1">Previous</button>
+				<!-- <button class = "button-panel" data-panelid = "on-click2">Preview</button> -->
 				<button class = "button-panel" data-panelid = "on-click2">Preview</button>
+				<!-- <button><i class="fa-solid fa-circle-play" class = "button-panel" data-panelid = "on-click2"></i></button> -->
 				<!-- <input type = "button-panel" value = "Preview" data-panelid = "on-click2" onclick = "play()"> -->
 				<audio id = "audio" audio-panelid = "audio1" src = "CutSongs/Fairy_Tale_Seori_cut.mp3"></audio>
 				<audio id = "audio" audio-panelid = "audio2" src = "CutSongs/The_Night_Lovewave_cut.mp3"></audio>
@@ -141,8 +144,11 @@
 				<audio id = "audio" audio-panelid = "audio10" src = "CutSongs/Fragile_TatsuroYamashita_cut.mp3"></audio>
 				<audio autoplay loop id = "audio" audio-panelid = "audio11" src = "Songs/Menu.mp3"></audio>
 
+				<!-- <button class = "button-panel" data-panelid = "on-click3"><i class="fa-solid fa-angle-right"></i></button> -->
 				<button class = "button-panel" data-panelid = "on-click3">Pause</button>
 				<button class = "button-panel" data-panelid = "on-click4">Next</button>
+
+				<button class = "button-panel" data-panelid = "on-click5" style = "position: fixed; bottom: -50px; left: -200%;">Toggle</buton>
 			</div>
 		</div>
 	</body>

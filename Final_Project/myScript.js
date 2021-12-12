@@ -1,7 +1,3 @@
-// back button bottom right
-// song plays w/ preview
-
-
 var counter = 1;
 // const getAudio = document.getElementById("audio")
 // const getAudio2 = document.getElementById("audio")
@@ -34,13 +30,34 @@ const getAlbum10 = document.getElementById("album10");
 
 audio[10].volume = 0.05;
 
+// #(function(){
+//     jQuery("")
+// })
+
 // audio[10].play();
+toggleC = 1;
+
+// $('.toggleB').on('click', function(){
+//     // var buttonId = $(this).attr('data-panelid')
+//     if(toggleC == 1){
+//         audio[10].pause();
+//         toggleC--;
+//     }else if(toggleC == 0){
+//         audio[10].play();
+//         toggleC++;
+//     }
+// })
+
 $('.button-panel').on('click', function(){
     var buttonId = $(this).attr('data-panelid')
     if(buttonId == "on-click1"){ // Previous
         audio[counter-1].pause();
         audio[10].volume = 0.05;
-        audio[10].play();
+        if(toggleC == 0){
+            audio[10].pause();
+        }else if(toggleC == 1){
+            audio[10].play();
+        }
         if(counter != 1){
             counter--;
         }
@@ -78,17 +95,32 @@ $('.button-panel').on('click', function(){
         console.log(counter);
         playCurrentSong(counter);
         audio[10].pause();
-        audio[10].volume = 0.3;
+        // audio[10].volume = 0.3;
+        // if(toggleC == 0){
+        //     audio[10].pause();
+        // }else if(toggleC == 1){
+        //     audio[10].play();
+        // }
+
         // }
     }else if(buttonId == 'on-click3'){ //Pause
         audio[counter-1].pause();
+        if(toggleC == 0){
+            audio[10].pause();
+        }else if(toggleC == 1){
+            audio[10].play();
+        }
         audio[10].volume = 0.05;
-        audio[10].play();
 
     }else if(buttonId == 'on-click4'){ // Next
         audio[counter-1].pause();
+        if(toggleC == 0){
+            audio[10].pause();
+        }else if(toggleC == 1){
+            audio[10].play();
+        }
         audio[10].volume = 0.05;
-        audio[10].play();
+        // audio[10].play();
         if(counter != 10){
             counter++;
         }
@@ -125,6 +157,16 @@ $('.button-panel').on('click', function(){
             console.log(counter)
         }
         changeBGC();
+    }else if(buttonId == 'on-click5'){
+        pauseCurrentSong(counter)
+        if(toggleC == 1){
+            audio[10].pause();
+            toggleC--;
+        }else if(toggleC == 0){
+            audio[10].play();
+            toggleC++;
+        }
+        console.log(toggleC)
     }
 });
 
@@ -175,7 +217,7 @@ function playCurrentSong(x){
     for(var i = 0; i < 10; i++){
         audio[i].volume = 0.5;
     }
-    audio[10].volume = 0.3;
+    audio[10].volume = 0.05;
     if(x == 1){
         audio[0].play();
         audio[1].currentTime = 0;
@@ -377,6 +419,19 @@ function playCurrentSong(x){
         audio[8].pause();
         audio[9].play();
     }
+}
+
+function pauseCurrentSong(x){
+        audio[0].pause();
+        audio[1].pause();
+        audio[2].pause();
+        audio[3].pause();
+        audio[4].pause();
+        audio[5].pause();
+        audio[6].pause();
+        audio[7].pause();
+        audio[8].pause();
+        audio[9].pause();
 }
 
 $(function(){

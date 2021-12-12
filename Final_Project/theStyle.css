@@ -122,6 +122,12 @@ h1{
     transform: translateY(-50%);
 }
 
+.toggleB{
+/*    position: fixed;
+    bottom: -50px;
+    left: -200%;*/
+    /*margin-left: -104.5px; 104.5px is half of the button's width*/
+}
 
 /*.ost1{
 	visibility: hidden;
