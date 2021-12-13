@@ -6,10 +6,11 @@
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script src="https://kit.fontawesome.com/d55ec6a3e5.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
 		<link href="theStyle.css" rel="stylesheet" type="text/css">
 		<script src="myScript.js" defer></script>
+		<script src="https://kit.fontawesome.com/d55ec6a3e5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -91,9 +92,10 @@
 
 		<div class = "container">
 			<div class = "bottom">
-				<button class = "button-panel" data-panelid = "on-click1">Previous</button>
+				<!-- <i class="fa-solid fa-pause"></i> -->
+				<button class = "button-panel" data-panelid = "on-click1"><i class="fas fa-solid fa-arrow-left"></i></button>
 				<!-- <button class = "button-panel" data-panelid = "on-click2">Preview</button> -->
-				<button class = "button-panel" data-panelid = "on-click2">Preview</button>
+				<button class = "button-panel" data-panelid = "on-click2"><i class="fas fa-solid fa-play"></i></button>
 				<!-- <button><i class="fa-solid fa-circle-play" class = "button-panel" data-panelid = "on-click2"></i></button> -->
 				<!-- <input type = "button-panel" value = "Preview" data-panelid = "on-click2" onclick = "play()"> -->
 				<audio id = "audio" audio-panelid = "audio1" src = "CutSongs/Fairy_Tale_Seori_cut.mp3"></audio>
@@ -107,13 +109,17 @@
 				<audio id = "audio" audio-panelid = "audio9" src = "CutSongs/Andromeda_Gorillaz_cut.mp3"></audio>
 				<audio id = "audio" audio-panelid = "audio10" src = "CutSongs/Fragile_TatsuroYamashita_cut.mp3"></audio>
 				<audio autoplay loop id = "audio" audio-panelid = "audio11" src = "Songs/Menu.mp3"></audio>
-
-				<button class = "button-panel" data-panelid = "on-click3"><i class="fa-solid fa-angle-right"></i></button>
+				<!-- <div> -->
+				<button class = "button-panel" data-panelid = "on-click3"><i class="fas fa-solid fa-pause"></i></button>
+				<!-- </div> -->
 				<!-- <button class = "button-panel" data-panelid = "on-click3">Pause</button> -->
-				<button class = "button-panel" data-panelid = "on-click4">Next</button>
+				<button class = "button-panel" data-panelid = "on-click4"><i class="fas fa-solid fa-arrow-right"></i></button>
 
-				<button class = "button-panel" data-panelid = "on-click5" style = "position: fixed; bottom: -50px; left: -200%;">Toggle</buton>
+<!-- 				<button class = "button-panel" data-panelid = "on-click5" style = "position: absolute; bottom: -50px; left: -200%;"><i class="fas fa-solid fa-toggle-on"></i></buton> -->
 			</div>
+		</div>
+		<div class = "posButton">
+			<button class = "button-panel" data-panelid = "on-click5" style = "    position: absolute; bottom: 10px; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;"><i class="fas fa-solid fa-toggle-on"></i></buton>
 		</div>
 	</body>
 </html>
